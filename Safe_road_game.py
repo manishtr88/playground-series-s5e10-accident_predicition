@@ -7,8 +7,8 @@ import streamlit as st
 
 accident_model = XGBRegressor()
 #Model Trained in Kaggle competition
-accident_model.load_model('C:\\Pyhton\\playground-series-s5e10\\model.ubj')
-scaler = joblib.load('C:\\Pyhton\\playground-series-s5e10\\scaler.pkl')
+accident_model.load_model('model.ubj')
+scaler = joblib.load('scaler.pkl')
 
 def accident_prediction(features):
     features_col = ['road_type', 'num_lanes', 'curvature', 'speed_limit', 'lighting',
@@ -106,7 +106,7 @@ def accident():
         else:
             st.success(f'You have travelled safely ')
 
-test_data =pd.read_csv('C:\\Pyhton\\playground-series-s5e10\\test.csv',index_col=0)
+test_data =pd.read_csv('test.csv',index_col=0)
 
 
 data_col = test_data.columns
