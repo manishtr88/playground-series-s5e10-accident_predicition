@@ -1,0 +1,20 @@
+# Core Data Analysis
+numpy
+pandas
+scipy
+scikit-optimize
+joblib
+
+# Visualization
+matplotlib
+seaborn
+graphviz
+streamlit
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+tensorflow
+keras
+torch
